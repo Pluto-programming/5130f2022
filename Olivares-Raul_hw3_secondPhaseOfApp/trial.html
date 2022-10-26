@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+ <head>
+  <title>
+   Ev-o-nah page
+  </title>
+ </head>
+ <body>
+<!-- This source code was developed by Raul Olivares -->
+  <h1>
+  <p style="font-size:10vw; color:red"> User Form!
+</p>
+  </h1>
+<form>
+<p><span id='demo'></span></p>
+</form>
+<p id="demo"></p>
+</body>
+<script>
+let text = localStorage.getItem("dateOfBirth");
+let obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = obj.name;
+</script>
+</html>
