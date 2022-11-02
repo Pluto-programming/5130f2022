@@ -1,0 +1,8 @@
+I was able to think more about how I wanted the website to look and 
+what would be needed in the javascript script to be able to thoroughly 
+accomplish that. The problem I am having and where all my time is going 
+in trying to come up with a solution is being able to save the data that 
+I am asking from the users and being able to pass it on to the next html 
+page to be displayed and used for the series of code needed in the script 
+to first take the users info and then run through already known data to 
+give a better estimate of the future cost of driving an EV will be.
