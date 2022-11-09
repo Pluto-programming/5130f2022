@@ -1,0 +1,20 @@
+This week i just continued to work on trying to extract the information from 
+my Ev-o-nah page into my trial.html to display, as well as to be able to use
+into my my script to develop the computation behind my app. I' am having difficulty
+with this. I might need help from the professor or from Neha with this. I've tried and
+tried but for some reason it just does not work. It is slowing me down because i need 
+to access those variables for the rest of my app. I think it might actually be 
+something between using the server and then accesing the link through cs.uml because
+on one intent the download code went through from my Ev-o-nah page but i have not
+been able to replicate the result and using the same code, it did not work as soon 
+as i tried again.
+
+
+6:53 11/8 just finaly found out that maybe my problems were not to do with my code
+but using safari to run the cs page. I now no longer feel like a failure but need to 
+catch up! I got my code atleast for the download button to work when i used the google
+chrome browser instead!
+8:05 Still could not get files to display info.
+
+10:05I can now display information from Ev-o-nah in a new page but only if that page has an
+php extension. Will it be okay for this project to use php???
