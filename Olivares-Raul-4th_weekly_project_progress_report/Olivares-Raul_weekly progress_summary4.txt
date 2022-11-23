@@ -1,0 +1,3 @@
+This week I worked on getting all the right information into my downloaded file 
+when the submit button is clicked. This will be used to give the user later on a copy
+of all his information with the designated quotes and info for him. Unable to perfect all infomation to download.
