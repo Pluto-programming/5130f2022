@@ -1,0 +1,1 @@
+Fixed up several things against the clock right now so just submitting my changes to my main Ev-o-nah file to account for what state the user lives in which will be used later in main dashboard page
