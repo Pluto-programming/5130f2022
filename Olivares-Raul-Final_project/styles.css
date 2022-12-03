@@ -1,0 +1,87 @@
+.page-container {
+  padding: 10px;
+}
+.section-1 {
+  border-color: green;
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+.section-title {
+  padding: 3px;
+  border-radius: 5px;
+}
+.bg-section1-dark {
+  background-color: #85E0A3;
+}
+
+.bg-section2-dark {
+  background-color: #FFAFA3;
+}
+.bg-section3-dark {
+  background-color: #75D7F0;
+}
+
+.bg-section4-dark {
+  background-color: #FFD966;
+}
+
+.bg-section1-light {
+  background-color: #F3FDF6;
+}
+.bg-section2-light {
+  background-color: #FFF7F6;
+}
+.bg-section3-light {
+  background-color: #F5FBFF;
+}
+.bg-section4-light {
+  background-color: #FFFCF1
+}
+
+.bg-menu {
+  background-color: #907CFF;
+}
+
+.border-section1 {
+  border: 2px solid;
+  border-color: #85E0A3;
+}
+
+.border-section2 {
+  border: 2px solid;
+  border-color: #FFAFA3;
+}
+
+.border-section3 {
+  border: 2px solid;
+  border-color: #75D7F0;
+}
+
+.border-section4 {
+  border: 2px solid;
+  border-color: #FFD966;
+}
+
+.card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 200px;
+  padding: 5px 10px;
+}
+
+.fit-content {
+  width: fit-content;
+}
+.menu-card {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10pxl
+}
+
+.card-footer-text {
+  position: absolute;
+  bottom: 0px;
+}
