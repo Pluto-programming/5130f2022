@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+ <head>
+  <title>
+   Ev-o-nah Official Webpage
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <link rel="stylesheet"  href="./styles.css"> 
+ </head>
+<!-- This source code was developed by raul olivares with some use of stackoverflow code ALSO TRYING TO GET THE CODE TO SAVE THE INPUT TO NEW FILE TO USE LATER BUT NOT WORKING -->
+  <body>
+    <!-- <h1>EV-o-nah</h1> -->
+    <div class="page-container mx-2">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-12 bg-menu px-4 py-2">
+          <div>
+            <h3 class="text-white mt-4">Quick tips</h3>
+            <div class="menu-card row">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h4>Toolbar</h4>
+                <span>It’s on the left side of your screen, with stickies, stamps, and anything you need.</span>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="./assets/images/toolbar.png" style="width: 100%;" alt="img"/>
+              </div>
+            </div>
+
+            <div class="menu-card row mt-4">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h4>Work with the app</h4>
+                <span>It’s on the left side of your screen, with stickies, stamps, and anything you need.</span>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="./assets/images/workwithapp.png" style="width: 100%;" alt="img"/>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-white mt-4">TOOLS</h3>
+            <div class="menu-card row">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h4>Homepage</h4>
+                <span>Press “S” to head on to the original page.</span>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="./assets/images/addtext.png" style="width: 100%;" alt="img"/>
+              </div>
+            </div>
+            <div class="menu-card row mt-4">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h4>Saved vehicles</h4>
+                <span>Press “E” to access your saved vehicles.</span>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="./assets/images/savevehicles.png" style="width: 100%;" alt="img"/>
+              </div>
+            </div>
+
+            <!-- <div class="menu-card row mt-4">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h4>Timer</h4>
+                <span>Use this timer to see how long it will take to reach your goal.</span>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="./assets/images/timer.png" style="width: 100%;" alt="img"/>
+              </div>
+            </div> -->
+
+            <div class="menu-card row mt-4">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h4>Saved Personal Information</h4>
+                <span>Download all your personal saved information to experience a better EV cost experienece by pressing d</span>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="./assets/images/savepersonalinfo.png" style="width: 100%;" alt="img"/>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-10 col-md-9 col-sm-12 sectioning">
+          
+          <div class="seperator">
+            <div class="cont1">
+              <div class="heading">
+                <p class="headingp">Electric vehicles near you</p>
+                <p class="struct"></p>
+                </div>
+             
+              <div class="con1-cont" id="con1-cont">
+                 
+                 
+                 <!--add cars card-->
+            </div>
+            </div>
+            <div class="cont2">
+              <div class="heading">
+                <p class="headingp">Nearest charging station to you</p>
+                <p class="struct"></p>
+              </div>
+             
+              <div  id="con2-cont" class="con2-cont">
+                  <div class="cad">
+                    <p id="quotet1" class="quote">Tesla1</p>
+                    <p id="quote1" class="quote1">0.00</p>
+                    
+                  </div>
+                  <div class="cad">
+                    <p id="quotet2" class="quote">BMW</p>
+                    <p id="quote2" class="quote1">0.00</p>
+                  </div>
+                  <div class="cad">
+                    <p id="quotet3" class="quote">Toyota</p>
+                    <p id="quote3" class="quote1">0.00</p>
+                  </div>
+              </div>
+
+            </div>
+            <div  class="cont3">
+              <div class="heading">
+                <p class="headingp">Average EV Insurance quotes near you</p>
+                <p class="struct"></p>
+                </div>
+              <div id="con3-cont" class="con3-cont">
+                  <div class="cad">
+                    <p  class="quote">1st Insurance Quote</p>
+                    <p id="quoteq1"class="quote1">0.00</p>
+                  </div>
+                  <div class="cad">
+                    <p class="quote">2nd Insurance Quote</p>
+                    <p  id="quoteq2"class="quote1">0.00</p>
+                  </div>
+                  <div class="cad">
+                    <p class="quote">3rd Insurance Quote</p>
+                    <p id="quoteq3"class="quote1">0.00</p>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cont4">
+            <div class="heading">
+              <p class="headingp">Overall Estimate</p>
+              <p class="struct"></p>
+              </div>
+            <div class="contb">
+              <div id="adjustr" class="adjustr">
+                <div class="cad">
+                  <p class="quote eq">Financed Estimate</p>
+                    <p id="finance" class="quote1">0.00</p>
+                </div>
+                <div class="cad">
+                  <p class="quote eq">Leased Estimate</p>
+                    <p id="leased" class="quote1 eq2">0.00</p>
+                </div>
+                <div class="cad">
+                  <p class="quote eq">Paid in Full Estimate</p>
+                    <p  id="paidfull"  class="quote1 eq2">0.00</p>
+                </div>
+              </div>
+              <div id="adjustl" class="adjustl">
+                <div class="cad">
+                  <p class="quote eq">Estimated Annual cost</p>
+                    <p  id="annualcost" class="quote1 eq2">0.00</p>
+                </div>
+                <div class="cad">
+                  <p class="quote eq">Estimated Monthly cost</p>
+                    <p id="monthlycost" class="quote1 eq2">0.00</p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+    <script src="./scripts/dashboard.js"></script>
+  </body>
+</html>

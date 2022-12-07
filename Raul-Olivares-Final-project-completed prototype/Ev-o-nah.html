@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+ <head>
+  <title>
+   Ev-o-nah Official Webpage
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ </head>
+ <body style= "background-color:rgb(248, 248, 152)">
+<!-- This source code was developed by raul olivares with some use of stackoverflow code ALSO TRYING TO GET THE CODE TO SAVE THE INPUT TO NEW FILE TO USE LATER BUT NOT WORKING -->
+<!--script src="projectScript.js"></script-->
+  <h1>
+  <p style="font-size:10vw; color:green"> Welcome to Ev-o-nah!
+</p>
+<img src="./assets/images/licensable-Ev-o-nah-home.jpeg" style="width: 50%;" alt="img"/>
+<p style="font-size:3vw; color:rgb(66, 10, 218)"> Please fill out your information so we can get you in an EV ASAP!
+</p>
+
+  </h1>
+<form class="text-left mx-4" name="addtext" id="form" >
+ <label style="color:rgb(182, 19, 17)"for="name" >What's your full name? </label>
+ <input type="text" id="name" name="Name"><br><br>
+  <label style="color:rgb(182, 19, 17)" for="currentlocation">What's your current location? </label>
+  <input type="text" required id="currentlocation" name="currentLocation"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="fromwhere">Where are you from? </label>
+  <input type="text" id="fromwhere" name="fromWhere"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="wishlocation">Where do you want to be? </label>
+  <input type="text" id="wishlocation" name="wishLocation"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="familyfrom">Where is your family from? </label>
+  <input type="text" id="familyfrom" name="familyFrom"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="stayatlocation">How long will you stay at your current location? </label>
+  <input type="text" id="stayatlocation" name="stayAtLocation"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="residencetype">What type of residence do you have? E.G. House/Apartment/Trailer/etc</label>
+  <input type="text" id="residencetype" name="residenceType"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="ownorrent">Do you own or rent? </label>
+  <input type="text" id="ownorrent" name="ownOrRent"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="bornwhere">Where were you born? </label>
+  <input type="text" id="bornwhere" name="bornWhere"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="dateofbirth">What's your date of birth? </label>
+  <input type="text" id="dateofbirth" name= "dateOfBirth"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="livewhere">Where do you live? </label>
+  <select required id="livewhere" class="livewhere">
+    <option value=""selected disabled hidden>pick your state</option>
+  </select>
+  <br/><br/>
+
+<label style="color:rgb(182, 19, 17)"for="wannalive">What's do you want to live? </label>
+  <input type="text" id="wannalive" name="wannaLive"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="sigotherborn">Where is your significant other from? </label>
+  <input type="text" id="sigotherborn" name="sigOtherBorn"><br><br>
+<label style="color:rgb(182, 19, 17)"for="livewithyou">Do they live with you? </label>
+  <input type="text" id="livewithyou" name="liveWithYou"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="sharevehicle">Do y'all share a vehicle? </label>
+  <input type="text" id="sharevehicle" name="shareVehicle"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="yourportfolio">Do you have an investment portfolio? </label>
+  <input type="text" id="yourportfolio" name="yourPortfolio"><br><br>
+<label style="color:rgb(182, 19, 17)"for="familyportfolio">Does your family have an investment portfolio? </label>
+  <input type="text" id="familyportfolio" name="familyPortfolio"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="sigotherportfolio">Does your significant other have an investment portfolio? </label>
+  <input type="text" id="sigotherportfolio" name="sigOtherPortfolio"><br><br>
+<label style="color:rgb(182, 19, 17)"for="ownedanev">Have you ever owned an EV? </label>
+  <input type="text" id="ownedanev" name="ownedAnEv"><br><br>
+<label style="color:rgb(182, 19, 17)"for="haveinsurance">Do you have insurance? </label>
+  <input type="text" id="haveinsurance" name="haveInsurance"><br><br>
+<label style="color:rgb(182, 19, 17)"for="leaseorbuy">Do you plan on leasing or buying </label>
+  <input type="text" id="leaseorbuy" name="leaseOrBuy"><br><br>
+<label style="color:rgb(182, 19, 17)"for="haveajob">Are you currently employed? </label>
+  <input type="text" id="haveajob" name="haveAjob"><br><br>
+<label style="color:rgb(182, 19, 17)"for="annualincome">What's your annual income? </label>
+  <input type="text" id="annualincome" name="incomeAnnual"><br><br>
+<label style="color:rgb(182, 19, 17)"for="myfile">Upload a file showing recent paystub or current bank account balance:</label>
+<input type="file" id="myfile" name="myfile"><br><br>
+
+ <button style="font-size:3vw" type="submit" size>Submit</button>
+</form>
+
+</body>
+<script src="/Raul-Olivares-Final-project-completed prototype/scripts/Ev-o-nah.js"></script>
+</html>
