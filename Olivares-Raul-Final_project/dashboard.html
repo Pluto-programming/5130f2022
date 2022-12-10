@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   <link rel="stylesheet"  href="./styles.css"> 
  </head>
-
+<!-- This source code was developed by raul olivares with some use of stackoverflow code ALSO TRYING TO GET THE CODE TO SAVE THE INPUT TO NEW FILE TO USE LATER BUT NOT WORKING -->
   <body>
     <!-- <h1>EV-o-nah</h1> -->
     <div class="page-container mx-2">
@@ -29,8 +30,8 @@
 
             <div class="menu-card row mt-4">
               <div class="col-lg-6 col-md-12 col-sm-12">
-                <h4>Work with the app</h4>
-                <span>It’s on the left side of your screen, with stickies, stamps, and anything you need.</span>
+                <h4>How to Work with the app</h4>
+                <span>Click an insurance quote, click a car, to obtain your nearest EV charging station; afterwards, click a buying option to get your EV cost calculation.</span>
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12">
                 <img src="./assets/images/workwithapp.png" style="width: 100%;" alt="img"/>
@@ -58,7 +59,7 @@
               </div>
             </div>
 
-            <div class="menu-card row mt-4">
+            <!-- <div class="menu-card row mt-4">
               <div class="col-lg-6 col-md-12 col-sm-12">
                 <h4>Timer</h4>
                 <span>Use this timer to see how long it will take to reach your goal.</span>
@@ -66,12 +67,12 @@
               <div class="col-lg-6 col-md-12 col-sm-12">
                 <img src="./assets/images/timer.png" style="width: 100%;" alt="img"/>
               </div>
-            </div>
+            </div> -->
 
             <div class="menu-card row mt-4">
               <div class="col-lg-6 col-md-12 col-sm-12">
                 <h4>Saved Personal Information</h4>
-                <span>Access all your saved information to experience a better EV cost experienece</span>
+                <span>Download all your personal saved information to experience a better EV cost experienece by pressing d</span>
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12">
                 <img src="./assets/images/savepersonalinfo.png" style="width: 100%;" alt="img"/>
@@ -80,365 +81,114 @@
             
           </div>
         </div>
-        <div class="col-lg-10 col-md-9 col-sm-12">
-          <div class="row" >
-            <div class="col-md-4 col-sm-6 section-1 px-4 mt-2">
-              <div class="row">
-                <p class="bg-section1-dark text-black section-title fit-content">Electric vehicles near you</p>
-              </div>
-              
-              <div class="row bg-section1-light justify-content-around border-section1" >
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section1-dark">
-                    <p>Tesla</p>
-                    <p class="card-footer-text">Raul Olivares</p>
-                  </div>
+
+
+
+        <div class="col-lg-10 col-md-9 col-sm-12 sectioning">
+          
+          <div class="seperator">
+            <div class="cont1">
+              <div class="heading">
+                <p class="headingp">Electric vehicles near you</p>
+                <p class="struct"></p>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section1-dark">
-                    <p>BMW</p>
-                    <p class="card-footer-text">Raul Olivares</p>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section1-dark">
-                    <p>Toyota</p>
-                    <p class="card-footer-text">Raul Olivares</p>
-                  </div>
-                </div>
-              </div>
+             
+              <div class="con1-cont" id="con1-cont">
+                 
+                 
+                 <!--add cars card-->
             </div>
-            
-            <div class="col-md-4 col-sm-6 px-4 mt-2">
-              <div class="row">
-                <p class="bg-section2-dark text-black section-title fit-content">Nearest charging station to you</p>
-              </div>
-              <div class="row bg-section2-light justify-content-around border-section2">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section2-dark">
-                    <p>Tesla</p>
-                    <p class="card-footer-text">Raul Olivares</p>
-                  </div>
-                </div>
-    
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section2-dark">
-                    <p>BMW</p>
-                    <p class="card-footer-text">Raul Olivares</p>
-                  </div>
-                </div>
-    
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section2-dark">
-                    <p>Toyota</p>
-                    <p class="card-footer-text">Raul Olivares</p>
-                  </div>
-                </div>
-               
-              </div>
             </div>
+            <div class="cont2">
+              <div class="heading">
+                <p class="headingp">Nearest charging station to you inside your city</p>
+                <p class="struct"></p>
+              </div>
+             
+              <div  id="con2-cont" class="con2-cont">
+                  <div class="cad">
+                    <p id="quotet1" class="quote">Tesla1</p>
+                    <p id="quote1" class="quote1">0.00</p>
                     
-            <div class="col-md-4 col-sm-6 px-4 mt-2">
-              <div class="row">
-                <p class="bg-section3-dark text-black section-title fit-content">Average EV Insurance quotes near you</p>
+                  </div>
+                  <div class="cad">
+                    <p id="quotet2" class="quote">BMW</p>
+                    <p id="quote2" class="quote1">0.00</p>
+                  </div>
+                  <div class="cad">
+                    <p id="quotet3" class="quote">Toyota</p>
+                    <p id="quote3" class="quote1">0.00</p>
+                  </div>
               </div>
-              
-              <div class="row bg-section3-light justify-content-around border-section3">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section3-dark">
-                    <p>Tesla</p>
-                    <p class="card-footer-text">Raul Olivares</p>
-                  </div>
+
+            </div>
+            <div  class="cont3">
+              <div class="heading">
+                <p class="headingp">Average EV Insurance quotes near you</p>
+                <p class="struct"></p>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section3-dark">
-                    <p>Tesla</p>
-                    <p class="card-footer-text">Raul Olivares</p>
+              <div id="con3-cont" class="con3-cont">
+                  <div class="cad">
+                    <p  class="quote">Geico Insurance Quote</p>
+                    <p id="quoteq1"class="quote1">0.00</p>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="card bg-section3-dark">
-                    <p>Tesla</p>
-                    <p class="card-footer-text">Raul Olivares</p>
+                  <div class="cad">
+                    <p class="quote">Progressive Insurance Quote</p>
+                    <p  id="quoteq2"class="quote1">0.00</p>
                   </div>
-                </div>
+                  <div class="cad">
+                    <p class="quote">All State Insurance Quote</p>
+                    <p id="quoteq3"class="quote1">0.00</p>
+                  </div>
               </div>
+
             </div>
           </div>
-          
-        <!-- 2nd row -->
-          <div class="row mt-4" >
-            <div class="col-12 section-1 px-4">
-              <div class="row">
-                <p class="bg-section4-dark text-black section-title fit-content">Overall Estimate</p>
+
+          <div class="cont4">
+            <div class="heading">
+              <p class="headingp">Overall Estimate</p>
+              <p class="struct"></p>
               </div>
-              
-              <div class="row bg-section4-light justify-content-around border-section4">
-                <div class="col-md-6 col-sm-12 row">
-                  <div class="col-lg-3 col-md-12">
-                    <div class="card bg-section4-dark">
-                      <p>Financed Estimate</p>
-                      <h3 id="financedEstimate"></h3>
-                      <p class="card-footer-text">Raul Olivares</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-12">
-                    <div class="card bg-section4-dark">
-                      <p>Leased Estimate</p>
-                      <h3 id="leasedEstimate"></h3>
-                      <p class="card-footer-text">Raul Olivares</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-12">
-                    <div class="card bg-section4-dark">
-                      <p>Paid in Full Estimate</p>
-                      <h3 id="paidInFullEstimate"></h3>
-                      <p class="card-footer-text">Raul Olivares</p>
-                    </div>
-                  </div>
-    
+            <div class="contb">
+              <div id="adjustr" class="adjustr">
+                <div class="cad">
+                  <p class="quote eq">Financed Estimate</p>
+                    <p id="finance" class="quote1">0.00</p>
                 </div>
-                <div class="col-md-6 col-sm-12 row justify-content-end">
-                  <div class="col-lg-3 col-md-12">
-                    <div class="card bg-section3-dark">
-                      <p>Estimated Annual cost</p>
-                      <h3 id="annualCost"></h3>
-                      <p class="card-footer-text">Raul Olivares</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-12">
-                    <div class="card bg-section3-dark">
-                      <p>Estimated Monthly cost</p>
-                      <h3 id="monthlyCost"></h3>
-                      <p class="card-footer-text">Raul Olivares</p>
-                    </div>
-                  </div>
+                <div class="cad">
+                  <p class="quote eq">Leased Estimate</p>
+                    <p id="leased" class="quote1 eq2">0.00</p>
                 </div>
+                <div class="cad">
+                  <p class="quote eq">Paid in Full Estimate</p>
+                    <p  id="paidfull"  class="quote1 eq2">0.00</p>
+                </div>
+              </div>
+              <div id="adjustl" class="adjustl">
+                <div class="cad">
+                  <p class="quote eq">Estimated Annual cost</p>
+                    <p  id="annualcost" class="quote1 eq2">0.00</p>
+                </div>
+                <div class="cad">
+                  <p class="quote eq">Estimated Monthly cost</p>
+                    <p id="monthlycost" class="quote1 eq2">0.00</p>
+                </div>
+
               </div>
             </div>
+
+
           </div>
         </div>
+
+
+
+
+
+
       </div>
     </div>
+    <script src="./scripts/dashboard.js"></script>
   </body>
-
-  <script>
-    window.onload = (event) => {
-      console.log("page is fully loaded");
-      const select = document.querySelector('#“livewhere”');
-
-      const statesData = [
-        {
-          stateId: "AL",
-          stateName: "Alabama",
-        },
-        {
-          stateId: "AK",
-          stateName: "Alaska",
-        },
-        {
-          stateId: "AZ",
-          stateName: "Arizona",
-        },
-        {
-          stateId: "AR",
-          stateName: "Arkansas",
-        },
-        {
-          stateId: "CA",
-          stateName: "California",
-        },
-        {
-          stateId: "CAN",
-          stateName: "Canada",
-        },
-        {
-          stateId: "CO",
-          stateName: "Colorado",
-        },
-        {
-          stateId: "CT",
-          stateName: "Connecticut",
-        },
-        {
-          stateId: "DC",
-          stateName: "Washington D.C.",
-        },
-        {
-          stateId: "FL",
-          stateName: "Florida",
-        },
-        {
-          stateId: "GA",
-          stateName: "Georgia",
-        },
-        {
-          stateId: "IA",
-          stateName: "Iowa",
-        },
-        {
-          stateId: "IL",
-          stateName: "Illinois",
-        },
-        {
-          stateId: "IN",
-          stateName: "Indiana",
-        },
-        {
-          stateId: "KS",
-          stateName: "Kansas",
-        },
-        {
-          stateId: "KY",
-          stateName: "Kentucky",
-        },
-        {
-          stateId: "LA",
-          stateName: "Louisiana",
-        },
-        {
-          stateId: "MA",
-          stateName: "Massachusetts",
-        },
-        {
-          stateId: "MD",
-          stateName: "Maryland",
-        },
-        {
-          stateId: "ME",
-          stateName: "Maine",
-        },
-        {
-          stateId: "MIS",
-          stateName: "Mississippi",
-        },
-        {
-          stateId: "MI",
-          stateName: "Michigan",
-        },
-        {
-          stateId: "MN",
-          stateName: "Minnesota",
-        },
-        {
-          stateId: "NE",
-          stateName: "Nebraska",
-        },
-        {
-          stateId: "NV",
-          stateName: "Nevada",
-        },
-        {
-          stateId: "NH",
-          stateName: "New Hampshire",
-        },
-        {
-          stateId: "NM",
-          stateName: "New Mexico",
-        },
-        {
-          stateId: "NJ",
-          stateName: "New Jersey",
-        },
-        {
-          stateId: "NY",
-          stateName: "New York",
-        },
-        {
-          stateId: "ON",
-          stateName: "Ontario",
-        },
-        {
-          stateId: "NC",
-          stateName: "North Carolina",
-        },
-        {
-          stateId: "ND",
-          stateName: "North Dakota",
-        },
-        {
-          stateId: "OK",
-          stateName: "Oklahoma",
-        },
-        {
-          stateId: "OR",
-          stateName: "Oregon",
-        },
-        {
-          stateId: "PA",
-          stateName: "Pennsylvania",
-        },
-        {
-          stateId: "RI",
-          stateName: "Rhode Island",
-        },
-        {
-          stateId: "SC",
-          stateName: "South Carolina",
-        },
-        {
-          stateId: "SD",
-          stateName: "South Dakota",
-        },
-        {
-          stateId: "TN",
-          stateName: "Tennessee",
-        },
-        {
-          stateId: "TX",
-          stateName: "Texas",
-        },
-        {
-          stateId: "UT",
-          stateName: "Utah",
-        },
-        {
-          stateId: "VE",
-          stateName: "Vermont",
-        },
-        {
-          stateId: "VI",
-          stateName: "Virginia",
-        },
-        {
-          stateId: "WV",
-          stateName: "West Virginia",
-        },
-        {
-          stateId: "WI",
-          stateName: "Wisconsin",
-        },
-        {
-          stateId: "WY",
-          stateName: "Wyoming",
-        },
-      ];
-
-      let estimateInfos = statesData.map(state => {
-        const monthlyCost =  Math.floor(Math.random() * 100) + 250;
-        return {
-          stateId: state.stateId,
-          stateName: state.stateName,
-          financedEstimate: 200,
-          leasedEstimate: 200,
-          paidInFullEstimate: 300,
-          monthlyCost: monthlyCost,
-          annualCost: monthlyCost * 12,
-        }
-      })
-     
-      let state = localStorage.getItem("livewhere");
-      const currentInfo = estimateInfos.find(item => item.stateId === state);
-      console.log("🚀 ~ file: dashboard.html:427 ~ currentInfo", currentInfo);
-      document.getElementById('financedEstimate').textContent = currentInfo.financedEstimate;
-      document.getElementById('leasedEstimate').textContent = currentInfo.leasedEstimate;
-      document.getElementById('paidInFullEstimate').textContent = currentInfo.paidInFullEstimate;
-      document.getElementById('monthlyCost').textContent = currentInfo.monthlyCost;
-      document.getElementById('annualCost').textContent = currentInfo.annualCost;
-
-      console.log("🚀 ~ file: dashboard.html:413 ~ state", state);
-    
-      
-    };
-  </script>
 </html>

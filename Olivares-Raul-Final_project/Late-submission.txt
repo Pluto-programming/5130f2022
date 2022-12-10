@@ -1,0 +1,55 @@
+Reason for late submission is that this last weekend was the only time i had free to 
+fully work on the project. I am a fulltime UNDERGRADUATE student, a full time-40 hour a week-worker
+and part of the school organization Sigma Phi Omicron; I just really barely have time to do everything.
+In the last submission i got all the dashboard pages to show coreectly! Showed the basic process for using
+ the app written. Got some of the menu bar items to become fully functional!!! I thought i would not be able
+  to make all 50 states so wrote in notes for the future individual or professor to write it but wasable to 
+  get it working.
+
+  how total amount to each card
+display 3 stations from api 
+put image to each car card
+
+
+the car is five different car option, can put any five car models, 
+I will change name later and set a different price for each. The user picks one and
+ that will help make the estimation for the bottom figures.  
+ There is a total amount for a car example 40,000.  Paid in full is paying it off at once, 
+ financed will be 72months with an annual interest rate that can be changed. T
+ hat will make the payment back of the loan be more.
+Example 16.46% would be  the loan interest making a monthly payment of 877$ a month and 10524$ a year.
+You add a monthly cost of an insurance of 200$ a month and tha makes the calculation 977$ a month and annual 12924$. 
+Lease would be a monthly cost of 400$ and this could be changed like the scroll for states but with 100-1500$ in 50$ increments.
+ And follow the same process as finance to make calculations. 
+ The pay in full cost monthly will only be the insurance cost as well as for the annual would be 2400$ because only the insurance would be calculated
+{((Total amount/100)*117.6)/72}+selected insurance
+Lease.    ({((Total amount/100)*117.6)/72}/4)+selected insurance
+If paid full estimate is clicked, monthly cost will be only selected insurance
+And annual cost will be selected insurance *12
+So If finances is clicked, monthly is same value, and annual is value *12
+So If lease is clicked, monthly is same value, and annual is value *12
+I mean annual is same value * 12
+
+
+
+
+
+
+nd so for the state that the user picks from the index.html and should be send to the dashboard.html file. 
+It should have these variables different for each state
+City: (example:Miami) - this is the variable that will change the request to the api- It should be an American city in that state, making it a single word city makes it easier to access the api
+
+1st insurance quote:(example:300$)
+2nd insurance quote:(example:250$)
+3rd insurance quote:(example:230$)
+cars:
+Tesla model x 2023
+price:79,000
+BMW i4 eDrive40 2023
+price:61,145
+Lexus Rz 450e 2023
+price:59,955
+Toyota bZ4X 2023
+price:42,000
+Audi Q4 e-tron 2023
+49,800

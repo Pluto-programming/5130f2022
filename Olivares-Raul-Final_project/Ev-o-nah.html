@@ -7,304 +7,74 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
  </head>
- <body>
-<!-- This source code was developed by  with some use of stackoverflow code ALSO TRYING TO GET THE CODE TO SAVE THE INPUT TO NEW FILE TO USE LATER BUT NOT WORKING -->
+ <body style= "background-color:rgb(248, 248, 152)">
+<!-- This source code was developed by raul olivares with some use of stackoverflow code ALSO TRYING TO GET THE CODE TO SAVE THE INPUT TO NEW FILE TO USE LATER BUT NOT WORKING -->
 <!--script src="projectScript.js"></script-->
   <h1>
   <p style="font-size:10vw; color:green"> Welcome to Ev-o-nah!
 </p>
+<img src="./assets/images/licensable-Ev-o-nah-home.jpeg" style="width: 50%;" alt="img"/>
+<p style="font-size:3vw; color:rgb(66, 10, 218)"> Please fill out your information so we can get you in an EV ASAP!
+</p>
+
   </h1>
-<form class="text-left mx-4" name="addtext" action="dashboard.html" onsubmit="download(this['Name'].value, this['currentLocation'].value, this['fromWhere'].value, this['wishLocation'].value, this['familyFrom'].value, this['stayAtLocation'].value, this['residenceType'].value, this['ownOrRent'].value, this['bornWhere'].value, this['dateOfBirth'].value, this['liveWhere'].value, this['wannaLive'].value, this['sigOtherBorn'].value, this['liveWithYou'].value, this['shareVehicle'].value, this['yourPortfolio'].value, this['familyPortfolio'].value, this['sigOtherPortfolio'].value, this['ownedAnEv'].value, this['haveInsurance'].value, this['leaseOrBuy'].value, this['haveAjob'].value, this['incomeAnnual'].value)">
- <label for="name">What's your full name? </label>
+<form class="text-left mx-4" name="addtext" id="form" >
+ <label style="color:rgb(182, 19, 17)"for="name" >What's your full name? </label>
  <input type="text" id="name" name="Name"><br><br>
-  <label for="currentlocation">What's your current location? </label>
-  <input type="text" id="currentlocation" name="currentLocation"><br><br>
-  <label for="fromwhere">Where are you from? </label>
+  <label style="color:rgb(182, 19, 17)" for="currentlocation">What's your current location? </label>
+  <input type="text" required id="currentlocation" name="currentLocation"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="fromwhere">Where are you from? </label>
   <input type="text" id="fromwhere" name="fromWhere"><br><br>
-  <label for="wishlocation">Where do you want to be? </label>
+  <label style="color:rgb(182, 19, 17)"for="wishlocation">Where do you want to be? </label>
   <input type="text" id="wishlocation" name="wishLocation"><br><br>
-  <label for="familyfrom">Where is your family from? </label>
+  <label style="color:rgb(182, 19, 17)"for="familyfrom">Where is your family from? </label>
   <input type="text" id="familyfrom" name="familyFrom"><br><br>
-  <label for="stayatlocation">How long will you stay at your current location? </label>
+  <label style="color:rgb(182, 19, 17)"for="stayatlocation">How long will you stay at your current location? </label>
   <input type="text" id="stayatlocation" name="stayAtLocation"><br><br>
-  <label for="residencetype">What type of residence do you have? E.G. House/Apartment/Trailer/etc</label>
+  <label style="color:rgb(182, 19, 17)"for="residencetype">What type of residence do you have? E.G. House/Apartment/Trailer/etc</label>
   <input type="text" id="residencetype" name="residenceType"><br><br>
-  <label for="ownorrent">Do you own or rent? </label>
+  <label style="color:rgb(182, 19, 17)"for="ownorrent">Do you own or rent? </label>
   <input type="text" id="ownorrent" name="ownOrRent"><br><br>
-  <label for="bornwhere">Where were you born? </label>
+  <label style="color:rgb(182, 19, 17)"for="bornwhere">Where were you born? </label>
   <input type="text" id="bornwhere" name="bornWhere"><br><br>
-  <label for=“dateofbirth”>What's your date of birth? </label>
-  <input type="text" id="dateofbirth" name= “dateOfBirth”><br><br>
-  <label for=“livewhere”>Where do you live? </label>
-  <select id=“livewhere” onchange="onStateChange()">
+  <label style="color:rgb(182, 19, 17)"for="dateofbirth">What's your date of birth? </label>
+  <input type="text" id="dateofbirth" name= "dateOfBirth"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="livewhere">Where do you live? </label>
+  <select required id="livewhere" class="livewhere">
+    <option value=""selected disabled hidden>pick your state</option>
   </select>
   <br/><br/>
 
-<label for=“wannalive”>What's do you want to live? </label>
-  <input type="text" id=“wannalive” name=“wannaLive”><br><br>
-  <label for=“sigotherborn”>Where is your significant other from? </label>
-  <input type="text" id=“sigottherborn” name=“sigOtherBorn”><br><br>
-<label for=“livewithyou”>Do they live with you? </label>
-  <input type="text" id=“livewithyou” name=“liveWithYou”><br><br>
-  <label for=“sharevehicle”>Do y'all share a vehicle? </label>
-  <input type="text" id=“sharevehicle” name=“shareVehicle”><br><br>
-  <label for=“yourportfolio”>Do you have an investment portfolio? </label>
-  <input type="text" id=“yourportfolio” name=“yourPortfolio”><br><br>
-<label for=“familyportfolio”>Does your family have an investment portfolio? </label>
-  <input type="text" id=“familyportfolio” name=“familyPortfolio”><br><br>
-  <label for=“sigotherportfolio”>Does your significant other have an investment portfolio? </label>
-  <input type="text" id=“sigotherportfolio” name=“sigOtherPortfolio”><br><br>
-<label for=“ownedanev”>Have you ever owned an EV? </label>
-  <input type="text" id=“ownedanev” name=“ownedAnEv”><br><br>
-<label for=“haveinsurance”>Do you have insurance? </label>
-  <input type="text" id=“haveinsurance” name=“haveInsurance”><br><br>
-<label for=“leaseorbuy”>Do you plan on leasing or buying </label>
-  <input type="text" id=“leaseorbuy” name=“leaseOrBuy”><br><br>
-<label for=“haveajob”>Are you currently employed? </label>
-  <input type="text" id=“haveajob” name=“haveAjob”><br><br>
-<label for=“annualincome”>What's your annual income? </label>
-  <input type="text" id=“annualincome” name=“incomeAnnual”><br><br>
-<label for="myfile">Upload a file showing recent paystub or current bank account balance:</label>
-<input type="file" id="myfile" name="myfile">
+<label style="color:rgb(182, 19, 17)"for="wannalive">What's do you want to live? </label>
+  <input type="text" id="wannalive" name="wannaLive"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="sigotherborn">Where is your significant other from? </label>
+  <input type="text" id="sigotherborn" name="sigOtherBorn"><br><br>
+<label style="color:rgb(182, 19, 17)"for="livewithyou">Do they live with you? </label>
+  <input type="text" id="livewithyou" name="liveWithYou"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="sharevehicle">Do y'all share a vehicle? </label>
+  <input type="text" id="sharevehicle" name="shareVehicle"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="yourportfolio">Do you have an investment portfolio? </label>
+  <input type="text" id="yourportfolio" name="yourPortfolio"><br><br>
+<label style="color:rgb(182, 19, 17)"for="familyportfolio">Does your family have an investment portfolio? </label>
+  <input type="text" id="familyportfolio" name="familyPortfolio"><br><br>
+  <label style="color:rgb(182, 19, 17)"for="sigotherportfolio">Does your significant other have an investment portfolio? </label>
+  <input type="text" id="sigotherportfolio" name="sigOtherPortfolio"><br><br>
+<label style="color:rgb(182, 19, 17)"for="ownedanev">Have you ever owned an EV? </label>
+  <input type="text" id="ownedanev" name="ownedAnEv"><br><br>
+<label style="color:rgb(182, 19, 17)"for="haveinsurance">Do you have insurance? </label>
+  <input type="text" id="haveinsurance" name="haveInsurance"><br><br>
+<label style="color:rgb(182, 19, 17)"for="leaseorbuy">Do you plan on leasing or buying </label>
+  <input type="text" id="leaseorbuy" name="leaseOrBuy"><br><br>
+<label style="color:rgb(182, 19, 17)"for="haveajob">Are you currently employed? </label>
+  <input type="text" id="haveajob" name="haveAjob"><br><br>
+<label style="color:rgb(182, 19, 17)"for="annualincome">What's your annual income? </label>
+  <input type="text" id="annualincome" name="incomeAnnual"><br><br>
+<label style="color:rgb(182, 19, 17)"for="myfile">Upload a file showing recent paystub or current bank account balance:</label>
+<input type="file" id="myfile" name="myfile"><br><br>
 
-  <input type="submit" onlick="saveFile()" value="Submit">
+ <button style="font-size:3vw" type="submit" size>Submit</button>
 </form>
 
 </body>
-<script>
-
-window.onload = (event) => {
-  console.log("page is fully loaded");
-  const select = document.querySelector('#“livewhere”');
-
-  const statesData = [
-  {
-    stateId: "AL",
-    stateName: "Alabama",
-  },
-  {
-    stateId: "AK",
-    stateName: "Alaska",
-  },
-  {
-    stateId: "AZ",
-    stateName: "Arizona",
-  },
-  {
-    stateId: "AR",
-    stateName: "Arkansas",
-  },
-  {
-    stateId: "CA",
-    stateName: "California",
-  },
-  {
-    stateId: "CAN",
-    stateName: "Canada",
-  },
-  {
-    stateId: "CO",
-    stateName: "Colorado",
-  },
-  {
-    stateId: "CT",
-    stateName: "Connecticut",
-  },
-  {
-    stateId: "DC",
-    stateName: "Washington D.C.",
-  },
-  {
-    stateId: "FL",
-    stateName: "Florida",
-  },
-  {
-    stateId: "GA",
-    stateName: "Georgia",
-  },
-  {
-    stateId: "IA",
-    stateName: "Iowa",
-  },
-  {
-    stateId: "IL",
-    stateName: "Illinois",
-  },
-  {
-    stateId: "IN",
-    stateName: "Indiana",
-  },
-  {
-    stateId: "KS",
-    stateName: "Kansas",
-  },
-  {
-    stateId: "KY",
-    stateName: "Kentucky",
-  },
-  {
-    stateId: "LA",
-    stateName: "Louisiana",
-  },
-  {
-    stateId: "MA",
-    stateName: "Massachusetts",
-  },
-  {
-    stateId: "MD",
-    stateName: "Maryland",
-  },
-  {
-    stateId: "ME",
-    stateName: "Maine",
-  },
-  {
-    stateId: "MIS",
-    stateName: "Mississippi",
-  },
-  {
-    stateId: "MI",
-    stateName: "Michigan",
-  },
-  {
-    stateId: "MN",
-    stateName: "Minnesota",
-  },
-  {
-    stateId: "NE",
-    stateName: "Nebraska",
-  },
-  {
-    stateId: "NV",
-    stateName: "Nevada",
-  },
-  {
-    stateId: "NH",
-    stateName: "New Hampshire",
-  },
-  {
-    stateId: "NM",
-    stateName: "New Mexico",
-  },
-  {
-    stateId: "NJ",
-    stateName: "New Jersey",
-  },
-  {
-    stateId: "NY",
-    stateName: "New York",
-  },
-  {
-    stateId: "ON",
-    stateName: "Ontario",
-  },
-  {
-    stateId: "NC",
-    stateName: "North Carolina",
-  },
-  {
-    stateId: "ND",
-    stateName: "North Dakota",
-  },
-  {
-    stateId: "OK",
-    stateName: "Oklahoma",
-  },
-  {
-    stateId: "OR",
-    stateName: "Oregon",
-  },
-  {
-    stateId: "PA",
-    stateName: "Pennsylvania",
-  },
-  {
-    stateId: "RI",
-    stateName: "Rhode Island",
-  },
-  {
-    stateId: "SC",
-    stateName: "South Carolina",
-  },
-  {
-    stateId: "SD",
-    stateName: "South Dakota",
-  },
-  {
-    stateId: "TN",
-    stateName: "Tennessee",
-  },
-  {
-    stateId: "TX",
-    stateName: "Texas",
-  },
-  {
-    stateId: "UT",
-    stateName: "Utah",
-  },
-  {
-    stateId: "VE",
-    stateName: "Vermont",
-  },
-  {
-    stateId: "VI",
-    stateName: "Virginia",
-  },
-  {
-    stateId: "WV",
-    stateName: "West Virginia",
-  },
-  {
-    stateId: "WI",
-    stateName: "Wisconsin",
-  },
-  {
-    stateId: "WY",
-    stateName: "Wyoming",
-  },
-];
-
-  statesData.forEach(state => {
-    const newOption = document.createElement('option');
-    const optionText = document.createTextNode(state.stateName);
-    
-    newOption.appendChild(optionText);
-    newOption.setAttribute('value', state.stateId);
-    select.appendChild(newOption);
-  });
-};
-
-function onStateChange() {
-  var state = document.getElementById("“livewhere”").value;
-  localStorage.setItem("livewhere", state);
-}
-
-function download(filename, text, text1, text2, text3, text4, text5, text7, text8, text9, text10, text11, text12, text13, text14, text15, text16, text17, text18, text19, text20, text21, text22) {
-    var pom = document.createElement('a');
-    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
-
-  encodeURIComponent(text) + ' ' + encodeURIComponent(text1) + ' ' + encodeURIComponent(text2)+ ' ' + encodeURIComponent(text3) + ' ' + encodeURIComponent(text4)+ ' ' + encodeURIComponent(text5)+ ' ' + encodeURIComponent(text7)+ ' ' + encodeURIComponent(text8) + ' ' + encodeURIComponent(text9) + ' ' + encodeURIComponent(text10)+ ' ' + encodeURIComponent(text11)+ ' ' + encodeURIComponent(text12) + ' ' + encodeURIComponent(text13)+ ' ' + encodeURIComponent(text14)+ ' ' + encodeURIComponent(text15)  + ' ' + encodeURIComponent(text16)+ ' ' + encodeURIComponent(text17)+ ' ' + encodeURIComponent(text18)  + ' ' + encodeURIComponent(text19)+ ' ' + encodeURIComponent(text20)+ ' ' + encodeURIComponent(text21)  + ' ' + encodeURIComponent(text22));
-    pom.setAttribute('download', filename);
-
-    pom.style.display = 'none';
-    document.body.appendChild(pom);
-
-    pom.click();
-
-    document.body.removeChild(pom);
-  }
-
-  function addTextHTML()
-  {
-      document.addtext.name.value = document.addtext.name.value + ".html"
-  }
-
-  function addTextTXT()
-  {
-      document.addtext.name.value = document.addtext.name.value + ".txt"
-  }
-// Storing data:
-//localStorage.setItem("testJSON", dateOfBirth);
-localStorage.setItem("textvalue",JSON.stringify(currentLocation));
-</script>
+<script src="/Raul-Olivares-Final-project-completed prototype/scripts/Ev-o-nah.js"></script>
 </html>
